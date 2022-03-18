@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Diabetes Prognosis</string>
+    <string name="diabetes_check">Diabetes Check</string>
+    <string name="bmi_diet_plan"><![CDATA[BMI & Diet Plan]]></string>
+    <string name="insulin_injections">Insulin Injections</string>
+    <string name="medicine_alerts">Medicine Alerts</string>
+    <string name="pharmacy_near_me">Pharmacy Near Me</string>
+    <string name="faq_s">FAQ\'s</string>
 </resources>
