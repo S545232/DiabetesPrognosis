@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, DiabetesCheckActivity.class));
     }
 
+    public void bmiClick(View view) {
+        startActivity(new Intent(MainActivity.this, BmiActivity.class));
+    }
+
     public void faqClick(View view) {
         startActivity(new Intent(MainActivity.this, FaqActivity.class));
     }

@@ -21,9 +21,11 @@
 
         <activity android:name=".DiabetesCheckActivity"/>
 
-        <activity android:name=".FaqActivity"/>
+        <activity android:name=".BmiActivity"/>
 
         <activity android:name=".MedicineAlertsActivity"/>
+
+        <activity android:name=".FaqActivity"/>
     </application>
 
 </manifest>
