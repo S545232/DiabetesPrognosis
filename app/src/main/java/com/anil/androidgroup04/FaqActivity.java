@@ -14,6 +14,9 @@ public class FaqActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faq);
+
+        getSupportActionBar().setTitle("FAQ's");
+
         textlink = findViewById(R.id.textViewLink);
         textlink.setMovementMethod(LinkMovementMethod.getInstance());
         txt=findViewById(R.id.textViLink);
