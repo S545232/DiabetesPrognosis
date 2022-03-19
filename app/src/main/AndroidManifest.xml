@@ -19,10 +19,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".FaqActivity"/>
+        <activity android:name=".DiabetesCheckActivity"/>
+
+        <activity android:name=".BmiActivity"/>
+
+        <activity android:name=".InsulinActivity"/>
 
         <activity android:name=".MedicineAlertsActivity"/>
-        <activity android:name=".InsulinActivity"/>
+
+        <activity android:name=".FaqActivity"/>
+
     </application>
 
 </manifest>
