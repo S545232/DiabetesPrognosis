@@ -44,11 +44,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, InsulinActivity.class));
     }
 
-    public void faqClick(View view) {
-        startActivity(new Intent(MainActivity.this, FaqActivity.class));
+    public void pharmacyListClick(View view){
+        startActivity(new Intent(MainActivity.this, PharmacyListActivity.class));
     }
 
     public void medicineAlertsClick(View view) {
         startActivity(new Intent(MainActivity.this, MedicineAlertsActivity.class));
+    }
+
+    public void faqClick(View view) {
+        startActivity(new Intent(MainActivity.this, FaqActivity.class));
     }
 }

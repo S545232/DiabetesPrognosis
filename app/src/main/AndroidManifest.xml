@@ -25,6 +25,8 @@
 
         <activity android:name=".InsulinActivity"/>
 
+        <activity android:name=".PharmacyListActivity"/>
+
         <activity android:name=".MedicineAlertsActivity"/>
 
         <activity android:name=".FaqActivity"/>
