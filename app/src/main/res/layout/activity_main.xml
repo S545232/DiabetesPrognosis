@@ -155,6 +155,7 @@
                     android:layout_weight="1"
                     android:background="@android:color/white"
                     android:backgroundTint="@color/white"
+                    android:onClick="medicineAlertsClick"
                     app:cardCornerRadius="5dp"
                     app:cardElevation="5dp">
 

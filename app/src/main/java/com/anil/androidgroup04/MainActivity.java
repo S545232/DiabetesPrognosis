@@ -32,4 +32,8 @@ public class MainActivity extends AppCompatActivity {
     public void faqClick(View view) {
         startActivity(new Intent(MainActivity.this, FaqActivity.class));
     }
+
+    public void medicineAlertsClick(View view) {
+        startActivity(new Intent(MainActivity.this, MedicineAlertsActivity.class));
+    }
 }

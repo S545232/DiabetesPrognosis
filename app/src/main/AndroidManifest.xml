@@ -20,6 +20,8 @@
         </activity>
 
         <activity android:name=".FaqActivity"/>
+
+        <activity android:name=".MedicineAlertsActivity"/>
     </application>
 
 </manifest>
