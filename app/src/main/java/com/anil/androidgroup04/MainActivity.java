@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         faqBtn = findViewById(R.id.faq_btn);
     }
 
+    public void diabetesCheckClick(View view) {
+        startActivity(new Intent(MainActivity.this, DiabetesCheckActivity.class));
+    }
+
     public void faqClick(View view) {
         startActivity(new Intent(MainActivity.this, FaqActivity.class));
     }

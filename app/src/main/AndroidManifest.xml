@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".DiabetesCheckActivity"/>
+
         <activity android:name=".FaqActivity"/>
 
         <activity android:name=".MedicineAlertsActivity"/>
