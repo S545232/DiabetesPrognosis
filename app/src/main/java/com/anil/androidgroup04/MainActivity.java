@@ -5,7 +5,9 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     CardView diabetesCheckBtn, bmiBtn, medicineAlertsBtn, insulinBtn, pharmacyListBtn, faqBtn;
@@ -27,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
         medicineAlertsBtn = findViewById(R.id.medicine_alerts_btn);
         pharmacyListBtn = findViewById(R.id.pharmacy_near_btn);
         faqBtn = findViewById(R.id.faq_btn);
+
     }
+
 
     public void faqClick(View view) {
         startActivity(new Intent(MainActivity.this, FaqActivity.class));
@@ -36,4 +40,12 @@ public class MainActivity extends AppCompatActivity {
     public void medicineAlertsClick(View view) {
         startActivity(new Intent(MainActivity.this, MedicineAlertsActivity.class));
     }
+
+    public void insulinBtn(View view){
+        startActivity(new Intent(MainActivity.this, InsulinActivity.class));
+    }
+
+
+
+
 }
