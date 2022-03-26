@@ -1,8 +1,11 @@
 package com.anil.androidgroup04;
 
 import android.os.Bundle;
+
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
 
 public class PharmacyListActivity extends AppCompatActivity {
 
@@ -11,6 +14,8 @@ public class PharmacyListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pharmacy_list);
 
+
         getSupportActionBar().setTitle("Pharmacies Near Me");
     }
+
 }
