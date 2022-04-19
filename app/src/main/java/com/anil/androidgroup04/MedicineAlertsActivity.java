@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -47,6 +48,12 @@ public class MedicineAlertsActivity extends AppCompatActivity {
         add.setOnClickListener(v -> addReminder());
 
         getSupportActionBar().setTitle("Medicine Alerts");
+
+        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MedicineAlertsActivity.this);
+        recyclerView.setLayoutManager(linearLayoutManager);
+        setItemsInRecyclerView();
     }
 
     public void addReminder() {
