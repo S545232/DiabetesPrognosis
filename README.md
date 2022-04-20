@@ -2,7 +2,7 @@
 44644-01 Group04 Diabetes Prediction
 
 
-## Android Application for Prediction of COVID-19
+## Android Application for Prediction of Diabetes 
 
 ## Team Members: &nbsp; Anil Kolla, Chaitanya Swaroop Udata, Pulugurtha Vinay Madhur
 
@@ -11,7 +11,7 @@ project helps to identify the probability whether a person can get Diabetes or n
 
 ## Activities: &nbsp; Main Screen consists of the following screens.
 ### Diabetes-Prediction:
-Prediction of COVID is done based on oxygen levels, symptoms like Oxygen levels, Creatinine levels, blood pressure, cough, cold, headache, sore throat, asthma, had any chronic diseases like heart diseases, cancer, HIV etc., contacted any person who has covid.
+Prediction of Diabetes is done based on oxygen levels, symptoms like Oxygen levels, Creatinine levels, blood pressure, cough, cold, headache, sore throat, asthma, had any chronic diseases like heart diseases, cancer, HIV etc., contacted any person who has Diabetes.
 
 ### Medication:
 This activity suggests the vaccination dosage based on the person’s history whether they had first dose. If a person is vaccinated, then this app suggests after how many days that a person can get booster dose.
