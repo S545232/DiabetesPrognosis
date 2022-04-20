@@ -76,11 +76,21 @@ public class PharmacyListActivity extends AppCompatActivity implements ItemClick
 
     private ArrayList<String> getPlacesList() {
         ArrayList<String> placesList = new ArrayList<>();
-        placesList.add("Wallmart Supercenter,MO");
-        placesList.add("Hy-vee Pharmacy, MO");
-        placesList.add("Roger Pharmacy, MO");
-        placesList.add("Walmart Pharmacy, MO");
-        placesList.add("Saint Joseph Pharmacy, MO");
+        placesList.add("Corning,IA");
+        placesList.add("Brownville, NE");
+        placesList.add("Clearfield, IA");
+        placesList.add("Elwood, KS");
+        placesList.add("Saint Joseph, MO");
+        placesList.add("Union Star, MO");
+        placesList.add("Rock Port, MO");
+        placesList.add("Oregon, MO");
+        placesList.add("Denver, MO");
+        placesList.add("Blockton, IA");
+        placesList.add("Craig, MO");
+        placesList.add("Mound City, MO");
+        placesList.add("Gentry, MO");
+        placesList.add("Savannah, MO");
+        placesList.add("Fillmore, MO");
 
         return placesList;
     }
