@@ -16,46 +16,46 @@
         tools:context=".CovidPrediction"
         android:padding="10dp">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_age"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Age">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/til_age"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Age">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tie_age"
-                android:inputType="numberDecimal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/tie_age"-->
+<!--                android:inputType="numberDecimal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_temperature"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Temparature in F">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/til_temperature"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Enter Temparature in F">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tie_temperature"
-                android:inputType="numberDecimal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/tie_temperature"-->
+<!--                android:inputType="numberDecimal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_bp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint=" Enter Blood pressure (120/80)mm/Hg">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/til_bp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint=" Enter Blood pressure (120/80)mm/Hg">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tie_bp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/tie_bp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
         <TextView
             android:id="@+id/tv_gender"
@@ -95,40 +95,251 @@
         </RadioGroup>
 
         <TextView
-            android:id="@+id/tv_headache"
+            android:id="@+id/tv_urination"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:textColor="#000"
-            android:text="Headache"
+            android:text="Frequent urination ?"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/rg_headache"
+            android:id="@+id/rg_urination"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/rb_headache_low"
+                android:id="@+id/rb_urination_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
-                android:text="Low" />
+                android:text="Yes" />
 
             <RadioButton
-                android:id="@+id/rb_headache_mod"
+                android:id="@+id/rb_urination_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
-                android:text="Moderate" />
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_thirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#000"
+            android:text="Increased thirst ?"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_thirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <RadioButton
-                android:id="@+id/rb_headache_high"
+                android:id="@+id/rb_thirst_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
-                android:text="High" />
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/rb_thirst_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_fatigue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#000"
+            android:text="Fatigue ?"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_fatigue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_fatigue_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/rb_fatigue_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_vision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#000"
+            android:text="Blurred vision ?"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_vision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_vision_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/rb_vision_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_hunger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#000"
+            android:text="Increased hunger ?"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_hunger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_hunger_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/rb_hunger_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#000"
+            android:text="Unexplained weight loss ?"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_weight_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/rb_weight_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_wounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#000"
+            android:text="Slow healing cuts and wounds ?"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_wounds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_wounds_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/rb_wounds_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_numbness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#000"
+            android:text="Tingling or numbness in the hands or feet ?"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_numbness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_numbness_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/rb_numbness_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="No" />
         </RadioGroup>
 
         <Button
@@ -137,7 +348,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_margin="12dp"
-            android:text="Predict"
+            android:text="PREDICT"
             android:textSize="16sp" />
 
         <TextView
