@@ -80,7 +80,7 @@
             android:id="@+id/tv_about_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/abot_desc_str"
+            android:text="@string/about_desc_str"
             android:textSize="18sp"
             android:textStyle="italic" />
 
