@@ -6,7 +6,7 @@
     <string name="medicine_alerts">Medicine Alerts</string>
     <string name="pharmacy_near_me">Pharmacy Near Me</string>
     <string name="faq_s">FAQ\'s</string>
-    <string name="bmi_descption_str">The body mass index BMI is a measure that uses your height and weight to work out if your weight is healthy.The BMI calculation divides an adults weight in kilograms by their height in metres squared. For most Adults ideal BMI is in the 18.5 to 24.9 range.</string>
+    <string name="bmi_descrption_str">The body mass index BMI is a measure that uses your height and weight to work out if your weight is healthy.The BMI calculation divides an adults weight in kilograms by their height in metres squared. For most Adults ideal BMI is in the 18.5 to 24.9 range.</string>
     <string name="abot_desc_str">This Application helps to identify the probability whether a person can get Diabetes or not. It also calculates the measure for BMI and suggests a diet chart, Predicts the amount of insulin, Pharmacies list which gives the list of pharmacies for Diabetes medicines around 50 miles from Maryville and a medicine remainder.</string>
     <string
         name="messageWithLink"><a href="https://www.analyticsvidhya.com/blog/2022/01/diabetes-prediction-using-machine-learning/">Analysis 1</a></string>

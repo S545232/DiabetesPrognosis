@@ -60,7 +60,7 @@
             android:id="@+id/tv_bmi_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/bmi_descption_str"
+            android:text="@string/bmi_descrption_str"
             android:textSize="18sp"
             android:textStyle="italic" />
 
