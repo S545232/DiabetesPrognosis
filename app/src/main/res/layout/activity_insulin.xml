@@ -1,88 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="MissingDefaultResource">
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
 
     <TextView
-        android:id="@+id/oneTV"
+        android:id="@+id/tv_first_dose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="48dp"
-        android:text="Ever Taken Insulin?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Had Insulin ?"
+        android:textColor="#000"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rg_firstdose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_firstdose_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Yes"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rb_firstdose_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="No"
+            android:onClick="onRadioButtonClicked"/>
+
+
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_firstdose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:backgroundTint="@color/teal_200"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:hint="Enter Date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_firstdose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/twoTV"
+        android:id="@+id/tv_seconddose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="25dp"
-        android:text="Frequency"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/oneTV" />
+        android:text="Had your Second Dose?"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rg_seconddose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_seconddose_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+
+            android:text="Yes"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rb_seconddose_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="#000"
+
+            android:onClick="onRadioButtonClicked"/>
+
+
+    </RadioGroup>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_seconddose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="#000"
+        android:backgroundTint="@color/teal_200"
+        android:background="@color/white"
+        android:hint="Enter Date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_second_dose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/threeTV"
+        android:id="@+id/tv_next_dosage_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="25dp"
-        android:text="Last Dose Date"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/twoTV" />
+        android:text="Next Dosage Date"
+        android:textColor="#000"
+
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/fourTV"
+        android:id="@+id/tv_next_dosage_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="25dp"
-        android:text="Next Dose Date"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/threeTV" />
+        android:textColor="#000"
 
-    <TextView
-        android:id="@+id/fiveTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="48dp"
-        android:text="No"
-        app:layout_constraintStart_toEndOf="@+id/oneTV"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Result displays here"
+        android:textSize="16sp"/>
 
-    <TextView
-        android:id="@+id/sixTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="181dp"
-        android:layout_marginTop="25dp"
-        android:text="Monthly"
-        app:layout_constraintStart_toEndOf="@+id/twoTV"
-        app:layout_constraintTop_toBottomOf="@+id/fiveTV" />
 
-    <TextView
-        android:id="@+id/sevenTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="25dp"
-        android:text="02/02/2022"
-        app:layout_constraintStart_toEndOf="@+id/threeTV"
-        app:layout_constraintTop_toBottomOf="@+id/sixTV" />
-
-    <TextView
-        android:id="@+id/eightTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="25dp"
-        android:text="03/02/2022"
-        app:layout_constraintStart_toEndOf="@+id/fourTV"
-        app:layout_constraintTop_toBottomOf="@+id/sevenTV" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
