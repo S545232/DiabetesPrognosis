@@ -98,15 +98,15 @@ public class DiabetesCheckActivity extends AppCompatActivity implements View.OnC
     }
 
     public String finalResult() {
-        if (rb_urination_yes.isChecked() || rb_weight_yes.isChecked() || rb_wounds_yes.isChecked()) {
+        if (rb_urination_yes.isChecked() && rb_weight_yes.isChecked() && rb_wounds_yes.isChecked()) {
             return "Diabetes Probability: High";
 
-        } else if (rb_thirst_yes.isChecked() || rb_vision_yes.isChecked() || rb_hunger_yes.isChecked()) {
+        } else if (rb_thirst_yes.isChecked() && rb_vision_yes.isChecked() && rb_hunger_yes.isChecked()) {
             return "Diabetes Probability: Moderate";
 
-        } else if (rb_urination_no.isChecked() || rb_thirst_no.isChecked() || rb_fatigue_no.isChecked()
-                || rb_vision_no.isChecked() || rb_hunger_no.isChecked() || rb_weight_no.isChecked()
-                || rb_wounds_no.isChecked() || rb_numbness_no.isChecked()) {
+        } else if (rb_urination_no.isChecked() && rb_thirst_no.isChecked() && rb_fatigue_no.isChecked()
+                && rb_vision_no.isChecked() && rb_hunger_no.isChecked() && rb_weight_no.isChecked()
+                && rb_wounds_no.isChecked() && rb_numbness_no.isChecked()) {
             return "Diabetes Probability: No Symptoms";
 
         } else {
