@@ -94,62 +94,10 @@ public class DiabetesCheckActivity extends AppCompatActivity implements View.OnC
     }
 
     public void predictResult() {
-//        if (rb_urination_yes.equalsIgnoreCase("yes") || cret_double >= 5 || oxy_double <= 60 || chron.equalsIgnoreCase("yes")) {
-//
-//            tv_predict.setText("Covid Probability: High");
-//        } else {
-//            //calculating count for age
-//            if (age_int > 60) {
-//                age_count = 100;
-//            } else if (age_int > 15 && age_int <= 60)
-//                age_count = 50;
-//            else
-//                age_count = 10;
-//
-//            //calculating count for temperature
-//            if (temp_double > 102)
-//                temp_count = 100;
-//            else if (temp_double > 99 && temp_double <= 102)
-//                temp_count = 50;
-//            else
-//                temp_count = 10;
-//
-//            //calculating count for bp
-//            calcBp();
-//
-//            //calculating count for cough
-//            if (rb_cough_high.isChecked())
-//                cough_count = 100;
-//            else if (rb_cough_mod.isChecked())
-//                cough_count = 50;
-//            else
-//                cough_count = 10;
-//
-//            //calculating count for head ache
-//            if (rb_headache_high.isChecked())
-//                headache_count = 100;
-//            else if (rb_headache_mod.isChecked())
-//                headache_count = 50;
-//            else
-//                headache_count = 10;
-//            //getting Final result
-//            tv_predict.setTextColor(this.getResources().getColor(R.color.design_default_color_primary_variant));
         resultTv.setText(finalResult());
-
-
-//        }
-
     }
 
     public String finalResult() {
-//        String final_result;
-//        double result = (age_count + temp_count + bp_count + cough_count + headache_count) / 5.0;
-//        if (result >= 75)
-//            return "Covid Probability: High";
-//        else if (result >= 50 && result < 75)
-//            return "Covid Probability: Moderate";
-//        else
-
         if (rb_urination_yes.isChecked() || rb_weight_yes.isChecked() || rb_wounds_yes.isChecked()) {
             return "Diabetes Probability: High";
 
@@ -164,7 +112,5 @@ public class DiabetesCheckActivity extends AppCompatActivity implements View.OnC
         } else {
             return "Diabetes Probability: Low";
         }
-
     }
-
 }
