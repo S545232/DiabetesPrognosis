@@ -8,9 +8,8 @@
     <string name="faq_s">FAQ\'s</string>
     <string name="bmi_descrption_str">The body mass index BMI is a measure that uses your height and weight to work out if your weight is healthy.The formula for BMI is weight in kilograms divided by height in meters squared. For most Adults ideal BMI is in the 18.5 to 24.9 range.</string>
     <string name="about_desc_str">This Application is designed to predict diabetes, as your body either does not make enough insulin or cannot use it as well as it should.Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy. Most of the food you eat is broken down into sugar (also called glucose) and released into your bloodstream helps to identify the probability whether a person can get Diabetes or not. It also calculates the measure for BMI and Predicts the amount of insulin. Pharmacies list which gives the list of pharmacies for Diabetes medicines around 50 miles from Maryville and a medicine remainder.</string>
-    <string
-        name="messageWithLink"><a href="https://pophealthmetrics.biomedcentral.com/articles/10.1186/s12963-018-0166-4/">Prediction 1</a></string>
-    <string
-        name="messageLink"><a href="https://www.nature.com/articles/s41598-020-68771-z/">Prediction 2</a></string>
+    <string name="messageWithLink"><a href="https://pophealthmetrics.biomedcentral.com/articles/10.1186/s12963-018-0166-4/">Prediction 1</a></string>
+    <string name="messageLink"><a href="https://www.nature.com/articles/s41598-020-68771-z/">Prediction 2</a></string>
+    <string name="dietLink"><a href="https://www.healthifyme.com/blog/diabetic-diet-plan/">Click Here for Diet Chart</a></string>
 
 </resources>

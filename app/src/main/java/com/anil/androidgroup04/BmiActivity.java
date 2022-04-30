@@ -2,6 +2,7 @@ package com.anil.androidgroup04;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -15,6 +16,7 @@ public class BmiActivity extends AppCompatActivity implements View.OnClickListen
     EditText height, weight;
     Button calculateBtn;
     TextView bmiTV;
+    TextView dietTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,8 @@ public class BmiActivity extends AppCompatActivity implements View.OnClickListen
         weight = findViewById(R.id.etWeight);
         calculateBtn = findViewById(R.id.btnCalculate);
         bmiTV = findViewById(R.id.tvResult);
+        dietTV = findViewById(R.id.diet_tv);
+        dietTV.setMovementMethod(LinkMovementMethod.getInstance());
 
         calculateBtn.setOnClickListener(this);
     }

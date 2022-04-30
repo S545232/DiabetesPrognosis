@@ -14,7 +14,7 @@
         android:background="@color/white"
         android:orientation="vertical"
         tools:context=".CovidPrediction"
-        android:padding="10dp">
+        android:padding="24dp">
 
 <!--        <com.google.android.material.textfield.TextInputLayout-->
 <!--            android:id="@+id/til_age"-->
@@ -57,42 +57,42 @@
 
 <!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <TextView
-            android:id="@+id/tv_gender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gender"
-            android:textColor="#000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+<!--        <TextView-->
+<!--            android:id="@+id/tv_gender"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Gender"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
 
-        <RadioGroup
-            android:id="@+id/rg_gender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+<!--        <RadioGroup-->
+<!--            android:id="@+id/rg_gender"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
 
-            <RadioButton
-                android:id="@+id/rb_male"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="Male" />
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_male"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="#000"-->
+<!--                android:text="Male" />-->
 
-            <RadioButton
-                android:id="@+id/rb_female"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="Female" />
-            <RadioButton
-                android:id="@+id/rb_otherGender"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="Other" />
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_female"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="#000"-->
+<!--                android:text="Female" />-->
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_otherGender"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="#000"-->
+<!--                android:text="Other" />-->
 
-        </RadioGroup>
+<!--        </RadioGroup>-->
 
         <TextView
             android:id="@+id/tv_urination"
