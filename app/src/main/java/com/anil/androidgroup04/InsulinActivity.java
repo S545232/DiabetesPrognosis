@@ -13,10 +13,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class InsulinActivity extends AppCompatActivity {
-    TextView displayTV, tvFirstDose, tvNextDosageHeader, tvNextDosageDate;
-
-    RadioGroup rg_insulin;
-    RadioButton rb_firstinsulin_yes, rb_firstinsulin_no;
+    TextView displayTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,21 +21,31 @@ public class InsulinActivity extends AppCompatActivity {
         setContentView(R.layout.activity_insulin);
 
         getSupportActionBar().setTitle("Insulin Injections");
+
+        initViews();
     }
 
     public void initViews() {
-
-        tvFirstDose = findViewById(R.id.tv_first_insulin);
-
-        tvNextDosageHeader = findViewById(R.id.tv_next_insulin_header);
-        tvNextDosageDate = findViewById(R.id.tv_next_insulin_date);
-
-        rg_insulin = findViewById(R.id.rg_insulin);
-        rb_firstinsulin_yes = findViewById(R.id.rb_firstinsulin_yes);
-
+        displayTV = findViewById(R.id.tv_result);
     }
 
     public void onRadioButtonClicked(View view) {
+        // Is the view now checked?
+        boolean checked = ((RadioButton) view).isChecked();
 
+        // Check which RadioButton was clicked
+        switch (view.getId()) {
+            case R.id.rb_firstinsulin_yes:
+                if (checked) {
+                    displayTV.setText("Please take the next insulin after 6 hours of gap from the first insulin.");
+                }
+                break;
+
+            case R.id.rb_firstinsulin_no:
+                if (checked) {
+                    displayTV.setText("Please take the first insulin for today as soon as possible.\nTo avoid the severe health conditions");
+                }
+                break;
+        }
     }
 }
