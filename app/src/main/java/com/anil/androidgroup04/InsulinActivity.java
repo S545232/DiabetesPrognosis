@@ -1,6 +1,8 @@
 package com.anil.androidgroup04;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -11,13 +13,10 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class InsulinActivity extends AppCompatActivity {
-    TextView displayTV, tvFirstDose, tvSecondDose, tvNextDosageHeader, tvNextDosageDate;
+    TextView displayTV, tvFirstDose, tvNextDosageHeader, tvNextDosageDate;
 
-    RadioGroup rgFirstDose, rgSecondDose;
-    RadioButton rbModernaVaccine, rbJJVaccine;
-
-    TextInputLayout tilFirstDose, tilSecondDose;
-    TextInputEditText tieFirstDose, tieSecondDose;
+    RadioGroup rg_insulin;
+    RadioButton rb_firstinsulin_yes, rb_firstinsulin_no;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +25,20 @@ public class InsulinActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Insulin Injections");
     }
-    public void initViews(){
+
+    public void initViews() {
 
         tvFirstDose = findViewById(R.id.tv_first_insulin);
 
-        rgFirstDose = findViewById(R.id.rg_firstinsulin);
-
-
         tvNextDosageHeader = findViewById(R.id.tv_next_insulin_header);
         tvNextDosageDate = findViewById(R.id.tv_next_insulin_date);
+
+        rg_insulin = findViewById(R.id.rg_insulin);
+        rb_firstinsulin_yes = findViewById(R.id.rb_firstinsulin_yes);
+
+    }
+
+    public void onRadioButtonClicked(View view) {
 
     }
 }
